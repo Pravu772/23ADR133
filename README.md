@@ -2,10 +2,11 @@
 
 ## What is included
 
-- `notification_app_fe/` — frontend UI for the notification priority inbox
-- `notification_app_be/` — backend proxy for auth and notification requests
-- `logging_middleware/` — reusable log function and request logging middleware
-- `notification_system_design.md` — design and approach documentation
+- `stage1/notification_app_fe/` — Stage 1 frontend UI for the notification priority inbox
+- `stage1/notification_app_be/` — Stage 1 backend proxy for auth and notification requests
+- `stage1/logging_middleware/` — Stage 1 reusable log function and request logging middleware
+- `stage2/` — React Stage 2 frontend application with native CSS
+- `Notification_System_Design.md` — design and approach documentation
 - `.gitignore` — ignore `node_modules` and local files
 
 ## How it works

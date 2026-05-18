@@ -1,0 +1,175 @@
+﻿* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222222;
+}
+
+.app-shell {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+}
+
+.app-nav {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #222222;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.nav-link.active {
+  background: #222222;
+  color: #ffffff;
+}
+
+.app-main {
+  min-height: 60vh;
+}
+
+.page-shell {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  padding: 18px;
+}
+
+.page-intro {
+  margin-bottom: 18px;
+}
+
+.page-intro h2 {
+  margin: 0 0 8px;
+  font-size: 1.2rem;
+}
+
+.filters-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+label {
+  font-size: 0.95rem;
+}
+
+label select,
+label input {
+  margin-top: 5px;
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+
+.status-panel {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 0;
+  margin: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  font-size: 0.95rem;
+}
+
+.notification-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.notification-card {
+  border: 1px solid #cccccc;
+  padding: 14px;
+}
+
+.notification-card.viewed {
+  opacity: 0.7;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.type-chip,
+.status {
+  padding: 4px 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+.message {
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.card-footer button {
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  background: #f5f5f5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pagination-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.pagination-row button {
+  padding: 8px 10px;
+  border: 1px solid #cccccc;
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+
+.pagination-row button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+@media (max-width: 640px) {
+  .app-shell {
+    padding: 14px;
+  }
+
+  .filters-row {
+    flex-direction: column;
+  }
+
+  .card-footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
